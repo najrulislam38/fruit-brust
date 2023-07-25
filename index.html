@@ -28,6 +28,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "color-f8": "#F85559",
             },
           },
         },
@@ -98,7 +99,7 @@
                 <div
                   class="flex justify-center items-center w-full h-full text-center">
                   <div>
-                    <h1 class="text-white text-7xl font-bold max-w-[660px] mx-auto">
+                    <h1 class="text-white text-2xl md:text-4xl lg:text-7xl font-bold max-w-[660px] mx-auto">
                       Exotic tastes at your doorstep</h1>
                     <p class="text-white mt-6 mb-8">
                       We supply highly quality organic products
@@ -122,7 +123,7 @@
                 <div
                   class="flex justify-center items-center w-full h-full text-center">
                   <div>
-                    <h1 class="text-white text-7xl font-bold max-w-[660px] mx-auto">
+                    <h1 class="text-white text-2xl md:text-4xl lg:text-7xl font-bold max-w-[660px] mx-auto">
                       Exotic tastes at your doorstep</h1>
                     <p class="text-white mt-6 mb-8">
                       We supply highly quality organic products
@@ -146,7 +147,7 @@
                 <div
                   class="flex justify-center items-center w-full h-full text-center">
                   <div>
-                    <h1 class="text-white text-7xl font-bold max-w-[660px] mx-auto">
+                    <h1 class="text-white text-2xl md:text-4xl lg:text-7xl font-bold max-w-[660px] mx-auto">
                       Exotic tastes at your doorstep</h1>
                     <p class="text-white mt-6 mb-8">
                       We supply highly quality organic products
@@ -166,7 +167,203 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- deal section -->
+      <section class="pt-40 pb-20">
+        <div class="container max-w-screen-2xl mx-auto px-4 md:px-14 lg:px-24">
+          <div class="flex gap-6 flex-col lg:flex-row justify-between items-center">
+            <div class="text-center lg:text-left">
+              <h2 class="text-xl md:text-3xl lg:text-5xl font-extrabold mb-6">Deal of the day</h2>
+              <p class="max-w-[615px] text-sm md:text-base lg:text-base text-gray-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col ">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:29;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:25;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:08;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fruits card container -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
+            <!-- fruits card 1 -->
+            <div class="card  border pt-5">
+              <figure class="">
+                <img src="./images/fruit6.png" alt="Fruits" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl font-bold border-b py-5">12.90$ - 18.85$!</h2>
+                <p class="text-[#12121299] my-4">Apples</p>
+                <div>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                </div>
+                <div>
+                    <button class="text-color-f8" onclick="my_modal_1.showModal()">Details</button>
+                    <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box">
+                        <figure class="">
+                          <img src="./images/fruit6.png" alt="Fruits" class="" />
+                        </figure>
+                        <h3 class="font-bold text-4xl my-4 ">Apple</h3>
+                        <p class=" text-[#12121299] mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="">
+                          <!--  modal -->
+                          <div class="flex justify-center items-center gap-5">
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Close</button>
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Buy Now</button>
+                          </div>
+                        </div>
+                      </form>
+                    </dialog>
+                </div>
+              </div>
+            </div>
+            <!-- fruits card 2 -->
+            <div class="card  border pt-5">
+              <figure class="">
+                <img src="./images/fruit7.png" alt="Fruits" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl font-bold border-b py-5">12.90$ - 18.85$!</h2>
+                <p class="text-[#12121299] my-4">Orange</p>
+                <div>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                </div>
+                <div>
+                    <button class="text-color-f8" onclick="my_modal_2.showModal()">Details</button>
+                    <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box">
+                        <figure class="">
+                          <img src="./images/fruit7.png" alt="Fruits" class="" />
+                        </figure>
+                        <h3 class="font-bold text-4xl my-4 ">Orange</h3>
+                        <p class=" text-[#12121299] mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="">
+                          <!-- modal -->
+                          <div class="flex justify-center items-center gap-5">
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Close</button>
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Buy Now</button>
+                          </div>
+                        </div>
+                      </form>
+                    </dialog>
+                </div>
+              </div>
+            </div>
+            <!-- fruits card 3 -->
+            <div class="card  border pt-5">
+              <figure class="">
+                <img src="./images/fruit8.png" alt="Fruits" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl font-bold border-b py-5">12.90$ - 18.85$!</h2>
+                <p class="text-[#12121299] my-4">Red Dragon</p>
+                <div>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                </div>
+                <div>
+                    <button class="text-color-f8" onclick="my_modal_3.showModal()">Details</button>
+                    <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box">
+                        <figure class="">
+                          <img src="./images/fruit8.png" alt="Fruits" class="" />
+                        </figure>
+                        <h3 class="font-bold text-4xl my-4 ">Red Dragon</h3>
+                        <p class=" text-[#12121299] mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="">
+                          <!-- modal -->
+                          <div class="flex justify-center items-center gap-5">
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Close</button>
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Buy Now</button>
+                          </div>
+                        </div>
+                      </form>
+                    </dialog>
+                </div>
+              </div>
+            </div>
+            <!-- fruits card 4 -->
+            <div class="card  border pt-5">
+              <figure class="">
+                <img src="./images/fruit9.png" alt="Fruits" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl font-bold border-b py-5">12.90$ - 18.85$!</h2>
+                <p class="text-[#12121299] my-4">Banana</p>
+                <div>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                </div>
+                <div>
+                    <button class="text-color-f8" onclick="my_modal_5.showModal()">Details</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box">
+                        <figure class="">
+                          <img src="./images/fruit9.png" alt="Fruits" class="" />
+                        </figure>
+                        <h3 class="font-bold text-4xl my-4 ">Banana</h3>
+                        <p class=" text-[#12121299] mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="">
+                          <!--  modal -->
+                          <div class="flex justify-center items-center gap-5">
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Close</button>
+                            <button class="btn bg-color-f8 text-white hover:border hover:border-color-f8 hover:bg-white hover:text-color-f8">Buy Now</button>
+                          </div>
+                        </div>
+                      </form>
+                    </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="px-6 py-3 rounded-lg  bg-color-f8 border-none text-lg text-white mx-auto block">Shop Now</button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
