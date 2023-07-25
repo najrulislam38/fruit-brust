@@ -7,28 +7,75 @@
     <!-- google Fonts Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- Tailwind and DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
     <!-- Custom color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="lato">
+    <header>
+      <div class="container max-w-screen-2xl mx-auto px-4 md:px-14 lg:px-24">
+        <nav class="navbar md:bg-red-500 lg:bg-red-500 my-12 rounded-full px-2 md:px-4 lg:px-6 py-4 text-white">
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-xl">Home</a></li>
+              <li><a class="text-xl">About us</a></li>
+              <li><a class="text-xl">Shop</a></li>
+              <li><a class="text-xl">All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <div class="flex justify-center items-center gap-2">
+                <img src="./images/logo.png" alt="Logo">
+                <h3 class="text-4xl font-bold text-black lg:text-white">Fruit Burst</h3>
+            </div>
+          </div>
+          <div class="navbar-end  hidden lg:flex">
+            <div>
+                <div class="relative">
+                    <input type="text" placeholder="search here" class="lg:w-full px-7 py-3 rounded-full">
+                    <button class="text-[#121212] absolute top-3 right-4"><i class="fa-solid fa-magnifying-glass text-xl"></i></button>
+                </div>
+            </div>
+          </div>
+          <div class="flex-none ml-auto text-black lg:hidden">
+            <button class="btn btn-square btn-ghost ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-10 h-10 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+         </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+
+    </main>
+    <footer>
+
+        
+    </footer>
   </body>
 </html>
